@@ -2,8 +2,7 @@
 name = "stmanager"
 version = "0.1.0"
 edition = "2021"
-authors = ["Minsoo Kim <minsoo.kim@42dot.ai>"]
-repository = "https://gitlab.42dot.ai/minsoo.kim/zbus"
+repository = "https://https://github.com/irishair/zbus-example"
 
 [dependencies]
 anyhow = "1.0.71"
