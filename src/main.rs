@@ -108,7 +108,7 @@ async fn main() -> anyhow::Result<()> {
         let job = j1.ok().unwrap();
         log::debug!("HirteNode: StartUnit Ok:[{:?}]", job);
 
-        // cancel is not supported currently
+        //// cancel is not supported currently
         let ret = job.cancel().await;
         if ret.is_err() {
             log::debug!("HirteJob: Cancel Failed:[{:?}]", ret.err().unwrap());
