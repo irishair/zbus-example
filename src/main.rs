@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 42dot All rights reserved.
+ * Copyright (c) 2023 42dot.ai All rights reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -108,7 +108,7 @@ async fn main() -> anyhow::Result<()> {
         let job = j1.ok().unwrap();
         log::debug!("HirteNode: StartUnit Ok:[{:?}]", job);
 
-        // cancel is not supported currently
+        //// cancel is not supported currently
         let ret = job.cancel().await;
         if ret.is_err() {
             log::debug!("HirteJob: Cancel Failed:[{:?}]", ret.err().unwrap());
