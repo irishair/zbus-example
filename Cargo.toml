@@ -1,0 +1,26 @@
+[package]
+name = "stmanager"
+version = "0.1.0"
+edition = "2021"
+authors = ["Minsoo Kim <minsoo.kim@42dot.ai>"]
+repository = "https://gitlab.42dot.ai/minsoo.kim/zbus"
+
+[dependencies]
+anyhow = "1.0.71"
+env_logger = "0.10.0"
+futures = "0.3.28"
+futures-util = "0.3.28"
+log = "0.4.17"
+schemars = "0.8.12"
+serde = { version = "1.0.160", features = ["derive"] }
+serde_json = "1.0.96"
+strum_macros = "0.24.3"
+thiserror = "1.0.40"
+tokio = { version = "1.28.0", features = ["macros", "rt-multi-thread"] }
+zbus = { version = "3.13.1", default-features = false, features = ["tokio"] }
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
